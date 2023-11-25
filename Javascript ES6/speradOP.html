@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spread-Operator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header" class="ww">
+      <div class="cc">
+        <hgroup id="logo">
+          <a class="logo-over" href="#">ES6</a>
+        </hgroup>
+        <nav id="nav">
+          <ul class="c">
+            <li class="active">
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a style="background-color: #444; color: white" href="ES6.html">ES6 Basics</a>
+            </li>
+            <li>
+              <a href="aboutme.html">About Me</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <header id="header" class="ww">
+          <nav id="nav">
+            <ul class="c">
+              <li class="active">
+                <a href="classes.html">Classes</a>
+              </li>
+              <li>
+                <a href="arrowfnc.html">Arrow-Functions</a>
+              </li>
+              <li>
+                <a href="var.html">Variables</a>
+              </li>
+              <li>
+                <a href="arraymethods.html">Array-Methods</a>
+              </li>
+              <li>
+                <a href="destructing.html">Destructing</a>
+              </li>
+              <li>
+                <a style="background-color: #444; color: white" href="speradOP.html">Spread-Operator</a>
+              </li>
+              <li>
+                <a href="modules.html">Modules</a>
+              </li>
+              <li>
+                <a href="ternary.html">Ternary-Operator</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="main-cont">
+      <h1>Spread-Operator</h1>
+      <div class="code">
+        <!-- <div class="card-out">
+            <p>
+                <strong>Destructuring Arrays:</strong><br>
+                The first example demonstrates destructuring an array. In the "Before" section, individual elements are assigned to variables using indexing. In the "With destructuring" section, array destructuring syntax is used to directly assign values to variables.
+              </p>
+              
+              <p>
+                <strong>Destructuring in Function Return:</strong><br>
+                The second example showcases destructuring when a function returns an array. The "Before" section manually assigns each element of the returned array to variables. In the "With destructuring" section, array destructuring is utilized to assign the elements in a concise manner.
+              </p>
+              
+              <p>
+                <strong>Destructuring Objects in Function Parameters:</strong><br>
+                The third example illustrates destructuring objects within function parameters. In the "Before" section, a function takes an object as a parameter, and properties are accessed using dot notation. In the "With destructuring" section, the function parameter is directly destructured, simplifying property access.
+              </p>
+        </div> -->
+        <div class="card-in">
+            <p>
+                <strong>Using the Spread Operator in Arrays:</strong><br>
+                The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.<br><br>
+                <code>
+                  const numbersOne = [1, 2, 3];<br>
+                  const numbersTwo = [4, 5, 6];<br>
+                  const numbersCombined = [...numbersOne, ...numbersTwo];<br>
+                </code><br>
+                This example combines two arrays, <code>numbersOne</code> and <code>numbersTwo</code>, into a new array <code>numbersCombined</code> using the spread operator.
+              </p>
+              
+              <p>
+                <strong>Using the Spread Operator in Array Destructuring:</strong><br>
+                Assign the first and second items from numbers to variables and put the rest in an array:<br><br>
+                <code>
+                  const numbers = [1, 2, 3, 4, 5, 6];<br>
+                  const [one, two, ...rest] = numbers;<br>
+                </code><br>
+                This example uses array destructuring with the spread operator to assign the first item to <code>one</code>, the second item to <code>two</code>, and the rest of the items to <code>rest</code>.
+              </p>
+              
+              <p>
+                <strong>Using the Spread Operator in Object Merging:</strong><br>
+                Combine these two objects:<br><br>
+                <code>
+                  const myVehicle = {<br>
+                    &nbsp;&nbsp;brand: 'Ford',<br>
+                    &nbsp;&nbsp;model: 'Mustang',<br>
+                    &nbsp;&nbsp;color: 'red'<br>
+                  }<br><br>
+                  const updateMyVehicle = {<br>
+                    &nbsp;&nbsp;type: 'car',<br>
+                    &nbsp;&nbsp;year: 2021, <br>
+                    &nbsp;&nbsp;color: 'yellow'<br>
+                  }<br><br>
+                  const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}<br>
+                </code><br>
+                This example combines two objects, <code>myVehicle</code> and <code>updateMyVehicle</code>, into a new object <code>myUpdatedVehicle</code> using the spread operator.
+              </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

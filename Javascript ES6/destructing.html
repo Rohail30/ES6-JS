@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header" class="ww">
+      <div class="cc">
+        <hgroup id="logo">
+          <a class="logo-over" href="#">ES6</a>
+        </hgroup>
+        <nav id="nav">
+          <ul class="c">
+            <li class="active">
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a style="background-color: #444; color: white" href="ES6.html">ES6 Basics</a>
+            </li>
+            <li>
+              <a href="aboutme.html">About Me</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <header id="header" class="ww">
+          <nav id="nav">
+            <ul class="c">
+              <li class="active">
+                <a href="classes.html">Classes</a>
+              </li>
+              <li>
+                <a href="arrowfnc.html">Arrow-Functions</a>
+              </li>
+              <li>
+                <a href="var.html">Variables</a>
+              </li>
+              <li>
+                <a href="arraymethods.html">Array-Methods</a>
+              </li>
+              <li>
+                <a style="background-color: #444; color: white" href="destructing.html">Destructing</a>
+              </li>
+              <li>
+                <a href="speradOP.html">Spread-Operator</a>
+              </li>
+              <li>
+                <a href="modules.html">Modules</a>
+              </li>
+              <li>
+                <a href="ternary.html">Ternary-Operator</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="main-cont">
+      <h1>Destructuring Arrays</h1>
+      <div class="code">
+        <div class="card-out">
+            <p>
+                <strong>Destructuring Arrays:</strong><br>
+                The first example demonstrates destructuring an array. In the "Before" section, individual elements are assigned to variables using indexing. In the "With destructuring" section, array destructuring syntax is used to directly assign values to variables.
+              </p>
+              
+              <p>
+                <strong>Destructuring in Function Return:</strong><br>
+                The second example showcases destructuring when a function returns an array. The "Before" section manually assigns each element of the returned array to variables. In the "With destructuring" section, array destructuring is utilized to assign the elements in a concise manner.
+              </p>
+              
+              <p>
+                <strong>Destructuring Objects in Function Parameters:</strong><br>
+                The third example illustrates destructuring objects within function parameters. In the "Before" section, a function takes an object as a parameter, and properties are accessed using dot notation. In the "With destructuring" section, the function parameter is directly destructured, simplifying property access.
+              </p>
+        </div>
+        <div class="card-in">
+            <p>
+                <strong>Destructuring Arrays:</strong><br>
+                Before:
+                <code>
+                  const vehicles = ['mustang', 'f-150', 'expedition'];<br>
+                  const car = vehicles[0];<br>
+                  const truck = vehicles[1];<br>
+                  const suv = vehicles[2];
+                </code><br>
+                With destructuring:
+                <code>
+                  const vehicles = ['mustang', 'f-150', 'expedition'];<br>
+                  const [car, truck, suv] = vehicles;
+                </code>
+              </p>
+              
+              <p>
+                <strong>Destructuring in Function Return:</strong><br>
+                Before:
+                <code>
+                  function calculate(a, b) {<br>
+                    &nbsp;&nbsp;const add = a + b;<br>
+                    &nbsp;&nbsp;const subtract = a - b;<br>
+                    &nbsp;&nbsp;const multiply = a * b;<br>
+                    &nbsp;&nbsp;const divide = a / b;<br><br>
+                    &nbsp;&nbsp;return [add, subtract, multiply, divide];<br>
+                  }<br>
+                  const [add, subtract, multiply, divide] = calculate(4, 7);
+                </code><br>
+                With destructuring:
+                <code>
+                  function calculate(a, b) {<br>
+                    &nbsp;&nbsp;const add = a + b;<br>
+                    &nbsp;&nbsp;const subtract = a - b;<br>
+                    &nbsp;&nbsp;const multiply = a * b;<br>
+                    &nbsp;&nbsp;const divide = a / b;<br><br>
+                    &nbsp;&nbsp;return [add, subtract, multiply, divide];<br>
+                  }<br>
+                  const [add, subtract, multiply, divide] = calculate(4, 7);
+                </code>
+              </p>
+              
+              <p>
+                <strong>Destructuring Objects in Function Parameters:</strong><br>
+                Before:
+                <code>
+                  const vehicleOne = {<br>
+                    &nbsp;&nbsp;brand: 'Ford',<br>
+                    &nbsp;&nbsp;model: 'Mustang',<br>
+                    &nbsp;&nbsp;type: 'car',<br>
+                    &nbsp;&nbsp;year: 2021, <br>
+                    &nbsp;&nbsp;color: 'red'<br>
+                  }<br><br>
+                  myVehicle(vehicleOne);<br><br>
+                  function myVehicle(vehicle) {<br>
+                    &nbsp;&nbsp;const message = 'My ' + vehicle.type + ' is a ' + vehicle.color + ' ' + vehicle.brand + ' ' + vehicle.model + '.';<br>
+                  }
+                </code><br>
+                With destructuring:
+                <code>
+                  const vehicleOne = {<br>
+                    &nbsp;&nbsp;brand: 'Ford',<br>
+                    &nbsp;&nbsp;model: 'Mustang',<br>
+                    &nbsp;&nbsp;type: 'car',<br>
+                    &nbsp;&nbsp;year: 2021, <br>
+                    &nbsp;&nbsp;color: 'red'<br>
+                  }<br><br>
+                  myVehicle(vehicleOne);<br><br>
+                  function myVehicle({type, color, brand, model}) {<br>
+                    &nbsp;&nbsp;const message = 'My ' + type + ' is a ' + color + ' ' + brand + ' ' + model + '.';<br>
+                  }
+                </code>
+              </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

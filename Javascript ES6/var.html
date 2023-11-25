@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>variable</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header" class="ww">
+      <div class="cc">
+        <hgroup id="logo">
+          <a class="logo-over" href="#">ES6</a>
+        </hgroup>
+        <nav id="nav">
+          <ul class="c">
+            <li class="active">
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a style="background-color: #444; color: white" href="ES6.html">ES6 Basics</a>
+            </li>
+            <li>
+              <a href="aboutme.html">About Me</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <header id="header" class="ww">
+          <nav id="nav">
+            <ul class="c">
+              <li class="active">
+                <a href="classes.html">Classes</a>
+              </li>
+              <li>
+                <a href="arrowfnc.html">Arrow-Functions</a>
+              </li>
+              <li>
+                <a style="background-color: #444; color: white" href="var.html">Variables</a>
+              </li>
+              <li>
+                <a href="arraymethods.html">Array-Methods</a>
+              </li>
+              <li>
+                <a href="destructing.html">Destructing</a>
+              </li>
+              <li>
+                <a href="speradOP.html">Spread-Operator</a>
+              </li>
+              <li>
+                <a href="modules.html">Modules</a>
+              </li>
+              <li>
+                <a href="ternary.html">Ternary-Operator</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="main-cont">
+      <h1>Variables</h1>
+      <div class="code">
+        <div class="card-out">
+            <p>
+                <strong>Variables:</strong><br>
+                Now, with ES6, there are three ways of defining your variables: <code>var</code>, <code>let</code>, and <code>const</code>.
+              </p>
+              
+              <p>
+                If you use <code>var</code> outside of a function, it belongs to the global scope.
+              </p>
+              
+              <p>
+                If you use <code>var</code> inside of a function, it belongs to that function.
+              </p>
+              
+              <p>
+                If you use <code>var</code> inside of a block, i.e., a for loop, the variable is still available outside of that block.
+                <code>var</code> has a function scope, not a block scope.
+              </p>
+              
+              <p>
+                <code>let</code> has a block scope.
+                <code>let</code> is the block-scoped version of <code>var</code> and is limited to the block (or expression) where it is defined.
+              </p>
+              
+              <p>
+                If you use <code>let</code> inside of a block, i.e., a for loop, the variable is only available inside of that loop.
+              </p>
+              
+        </div>
+        <div class="card-in">
+          <p>
+            <strong>Constant:</strong><br>
+            <code>
+                const x = 5.6;
+            </code>
+          </p>
+          <br>
+          <p>
+            <strong>Var:</strong><br>
+            <code>
+                var x = 5.6;
+            </code>
+          </p>
+          <br>
+          <p>
+            <strong>Let:</strong><br>
+            <code>
+                let x = 5.6;
+            </code>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

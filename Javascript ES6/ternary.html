@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ternary-Operator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header" class="ww">
+      <div class="cc">
+        <hgroup id="logo">
+          <a class="logo-over" href="#">ES6</a>
+        </hgroup>
+        <nav id="nav">
+          <ul class="c">
+            <li class="active">
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a style="background-color: #444; color: white" href="ES6.html">ES6 Basics</a>
+            </li>
+            <li>
+                <a href="aboutme.html">About Me</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <header id="header" class="ww">
+          <nav id="nav">
+            <ul class="c">
+              <li class="active">
+                <a href="classes.html">Classes</a>
+              </li>
+              <li>
+                <a href="arrowfnc.html">Arrow-Functions</a>
+              </li>
+              <li>
+                <a href="var.html">Variables</a>
+              </li>
+              <li>
+                <a href="arraymethods.html">Array-Methods</a>
+              </li>
+              <li>
+                <a href="destructing.html">Destructing</a>
+              </li>
+              <li>
+                <a href="speradOP.html">Spread-Operator</a>
+              </li>
+              <li>
+                <a href="modules.html">Modules</a>
+              </li>
+              <li>
+                <a style="background-color: #444; color: white" href="ternary.html">Ternary-Operator</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="main-cont">
+      <h1>Ternary-Operator</h1>
+      <div class="code">
+        <div class="card-out">
+            <p>
+                <strong>Ternary Operator:</strong><br>
+                The ternary operator is a simplified conditional operator, providing a concise alternative to the traditional if/else statement.<br>
+                <strong>Syntax:</strong> <code>condition ? &lt;expression if true&gt; : &lt;expression if false&gt;</code>
+              </p>
+              
+              <p>
+                <strong>Example using if/else:</strong><br>
+                <code>
+                  if (condition) {<br>
+                    &nbsp;&nbsp;<em>// expression if true</em>;<br>
+                  } else {<br>
+                    &nbsp;&nbsp;<em>// expression if false</em>;<br>
+                  }
+                </code>
+              </p>
+        </div>
+        <div class="card-in">
+            <p>
+                <strong>Before:</strong><br>
+                <code>
+                  if (authenticated) {<br>
+                    &nbsp;&nbsp;renderApp();<br>
+                  } else {<br>
+                    &nbsp;&nbsp;renderLogin();<br>
+                  }
+                </code>
+              </p>
+              
+              <p>
+                <strong>With Ternary Operator:</strong><br>
+                <code>
+                  authenticated ? renderApp() : renderLogin();
+                </code><br>
+                The ternary operator is a concise way to write conditional statements. In this example, it checks the value of <code>authenticated</code>. If <code>true</code>, it calls <code>renderApp()</code>; otherwise, it calls <code>renderLogin()</code>.
+              </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

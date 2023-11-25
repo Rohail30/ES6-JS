@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header" class="ww">
+      <div class="cc">
+        <hgroup id="logo">
+          <a class="logo-over" href="#">ES6</a>
+        </hgroup>
+        <nav id="nav">
+          <ul class="c">
+            <li class="active">
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a style="background-color: #444; color: white" href="ES6.html">ES6 Basics</a>
+            </li>
+            <li>
+              <a href="aboutme.html">About Me</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <header id="header" class="ww">
+          <nav id="nav">
+            <ul class="c">
+              <li class="active">
+                <a style="background-color: #444; color: white" href="classes.html">Classes</a>
+              </li>
+              <li>
+                <a href="arrowfnc.html">Arrow-Functions</a>
+              </li>
+              <li>
+                <a href="var.html">Variables</a>
+              </li>
+              <li>
+                <a href="arraymethods.html">Array-Methods</a>
+              </li>
+              <li>
+                <a href="destructing.html">Destructing</a>
+              </li>
+              <li>
+                <a href="speradOP.html">Spread-Operator</a>
+              </li>
+              <li>
+                <a href="modules.html">Modules</a>
+              </li>
+              <li>
+                <a href="ternary.html">Ternary-Operator</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="main-cont">
+      <h1>Classes</h1>
+      <div class="code">
+        <div class="card-out">
+          <p>
+            <strong>Car Class:</strong>
+            The Car class is defined with a constructor that takes a parameter <code>name</code> and sets the property <code>this.brand</code> to the provided <code>name</code>.
+            It has a method <code>present()</code> that returns a string indicating the statement "I have a " followed by the brand of the car.
+          </p>
+          
+          <p>
+            <strong>Model Class (extends Car):</strong>
+            The Model class is declared and extends the Car class using the <code>extends</code> keyword, indicating that it inherits from Car.
+            It has its own constructor that takes two parameters (<code>name</code> and <code>mod</code>).
+            The <code>super(name)</code> is called inside the Model constructor to invoke the constructor of the parent class (Car) and set the brand property.
+            The <code>model</code> property is then set to the provided <code>mod</code>.
+            The class has a method <code>show()</code> that calls the <code>present()</code> method from the parent class and appends information about the model. It returns a string representing a statement about the car, including both brand and model.
+          </p>
+          
+          <p>
+            <strong>Instance Creation and Usage:</strong>
+            An instance of the Model class is created with the brand "Ford" and model "Mustang" using <code>const mycar = new Model("Ford", "Mustang")</code>.
+            The <code>show()</code> method is called on the <code>mycar</code> instance, and the resulting string is written to the document using <code>document.write()</code>.
+            The overall result, when executed, will write the string "I have a Ford, it is a Mustang" to the document. This demonstrates the concept of inheritance, where the Model class inherits properties and methods from the Car class and adds its own functionality.
+          </p>
+          
+        </div>
+        <div class="card-in">
+          <p>class Car {</p>
+            
+          <p>&nbsp;&nbsp;&nbsp;constructor(name) {</p>
+
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.brand = name;</p>
+
+          <p>&nbsp;&nbsp;&nbsp;}</p>
+
+          <p>&nbsp;&nbsp;&nbsp;present() {</p>
+
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 'I have a ' + this.brand;
+          </p>
+
+          <p>&nbsp;&nbsp;&nbsp;}</p>
+
+          <p>}</p>
+
+          <p>class Model extends Car {</p>
+
+          <p>&nbsp;&nbsp;&nbsp;constructor(name, mod) {</p>
+
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(name);</p>
+
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.model = mod;</p>
+
+          <p>&nbsp;&nbsp;&nbsp;}</p>
+
+          <p>&nbsp;&nbsp;&nbsp;show() {</p>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return
+            this.present() + ', it is a ' + this.model;
+          </p>
+          <p>&nbsp;&nbsp;&nbsp;}</p>
+          <p>}</p>
+          <p>const mycar = new Model("Ford", "Mustang");</p>
+          <p>document.write(mycar.show());</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

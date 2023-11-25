@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modules</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header" class="ww">
+      <div class="cc">
+        <hgroup id="logo">
+          <a class="logo-over" href="#">ES6</a>
+        </hgroup>
+        <nav id="nav">
+            <ul class="c">
+                <li class="active">
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a style="background-color: #444; color: white" href="ES6.html">ES6 Basics</a>
+                </li>
+                <li>
+                    <a href="aboutme.html">About Me</a>
+                </li>
+              </ul>
+        </nav>
+      </div>
+    </header>
+    <header id="header" class="ww">
+          <nav id="nav">
+            <ul class="c">
+              <li class="active">
+                <a href="classes.html">Classes</a>
+              </li>
+              <li>
+                <a href="arrowfnc.html">Arrow-Functions</a>
+              </li>
+              <li>
+                <a href="var.html">Variables</a>
+              </li>
+              <li>
+                <a href="arraymethods.html">Array-Methods</a>
+              </li>
+              <li>
+                <a href="destructing.html">Destructing</a>
+              </li>
+              <li>
+                <a href="speradOP.html">Spread-Operator</a>
+              </li>
+              <li>
+                <a style="background-color: #444; color: white" href="modules.html">Modules</a>
+              </li>
+              <li>
+                <a href="ternary.html">Ternary-Operator</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="main-cont">
+      <h1>Modules</h1>
+      <div class="code">
+        <div class="card-out">
+            <p>
+                <strong>Modules in JavaScript:</strong><br>
+                JavaScript modules allow you to break up your code into separate files, making it easier to maintain the code-base. ES Modules rely on the import and export statements.
+              </p>
+              
+              <p>
+                <strong>Export:</strong><br>
+                You can export a function or variable from any file. There are two types of exports: Named and Default.
+              </p>
+              
+              <p>
+                <strong>Named Exports:</strong><br>
+                You can create named exports in two ways: in-line individually or all at once at the bottom.
+              </p>
+              
+              <p>
+                <strong>Default Exports:</strong><br>
+                Let us create another file, named <code>message.js</code>, and use it for demonstrating default export. You can only have one default export in a file.
+              </p>
+              
+              <p>
+                <strong>Import:</strong><br>
+                You can import modules into a file in two ways, based on if they are named exports or default exports. Named exports must be destructured using curly braces. Default exports do not.
+              </p>
+              
+        </div>
+        <div class="card-in">
+            <p>
+                <strong>In-line Individually:</strong><br>
+                <code>person.js:</code><br>
+                <code>
+                  export const name = "Jesse"<br>
+                  export const age = 40
+                </code>
+              </p>
+              
+              <p>
+                <strong>All at Once at the Bottom:</strong><br>
+                <code>person.js:</code><br>
+                <code>
+                  const name = "Jesse"<br>
+                  const age = 40<br><br>
+                  export { name, age }
+                </code>
+              </p>
+              
+              <p>
+                <code>message.js:</code><br>
+                <code>
+                  const message = () => {<br>
+                    &nbsp;&nbsp;const name = "Jesse";<br>
+                    &nbsp;&nbsp;const age = 40;<br>
+                    &nbsp;&nbsp;return name + ' is ' + age + ' years old.';<br>
+                  }<br><br>
+                  export default message;
+                </code>
+              </p>
+              
+              <p>
+                <strong>Import named exports from the file person.js:</strong><br>
+                <code>
+                  import { name, age } from "./person.js";
+                </code>
+              </p>
+              
+              <p>
+                <strong>Import a default export from the file message.js:</strong><br>
+                <code>
+                  import message from "./message.js";
+                </code>
+              </p>
+              
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
